@@ -179,14 +179,15 @@
 
 - **Zero Trust:** Demands verification for every device, user, and transaction within the network, regardless of its origin. To create a zero trust architecture, we need to use two different planes:
     1. Control Plane: Refers to the overarching framework and set of components responsible for defining, managing, and enforcing the policies related to user and system access within an organization. It typically encompasses several key elements: Adaptive Identity (Relies on real-time validation that takes into account the user's behavior, device, location, and more).
+    - Control Plane consists of the following:
+        - **Policy Engine:** Cross-references the access request with its predefined policies.
+        - **Policy Administrator:** Used to establish and manage the access policies.
     2. Data Plane:
         - **Threat Scope Reduction:** Limits the users’ access to only what they need for their work tasks because this reduces the network’s potential attack surface. Focused on minimizing the "blast radius" that could occur in the event of a breach.
         - **Policy-Driven Access Control:** Entails developing, managing, and enforcing user access policies based on their roles and responsibilities.
         - **Secured Zones:** Isolated environments within a network that are designed to house sensitive data. Ensures the policies are properly executed.
     - Data plane consists of the following:
-        - **Subject/System:** Refers to the individual or entity attempting to gain access.
-        - **Policy Engine:** Cross-references the access request with its predefined policies.
-        - **Policy Administrator:** Used to establish and manage the access policies.
         - **Policy Enforcement Point:** Where the decision to grant or deny access is actually executed.
+        - **Subject/System:** Refers to the individual or entity attempting to gain access.
 
 
